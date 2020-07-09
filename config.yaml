@@ -1,11 +1,11 @@
 # Birds CUB dataset
-birds_images_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/CUB_200_2011/CUB_200_2011/images/'
-birds_embedding_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/cub_icml/'
-birds_text_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/cvpr2016_cub/text_c10/'
+birds_images_path: '../Data/Birds_dataset/cvpr2016_cub/images/'
+birds_embedding_path: '../Data/Birds_dataset/cub_icml/'
+birds_text_path: '../Data/Birds_dataset/cvpr2016_cub/text_c10/'
 birds_dataset_path: '/scratch/aelnouby/text2image/birds.hdf5'
-val_split_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/cub_icml/valclasses.txt'
-train_split_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/cub_icml/trainclasses.txt'
-test_split_path: '/export/mlrg/aelnouby/projects/GANs/Birds dataset/cub_icml/testclasses.txt'
+val_split_path: '../Data/Birds_dataset/cub_icml/valclasses.txt'
+train_split_path: '../Data/Birds_dataset/cub_icml/trainclasses.txt'
+test_split_path: '../Data/Birds_dataset/cub_icml/testclasses.txt'
 
 
 # flowers dataset
