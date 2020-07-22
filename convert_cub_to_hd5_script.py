@@ -3,7 +3,8 @@ from os.path import join, isfile
 import numpy as np
 import h5py
 from glob import glob
-from torch.utils.serialization import load_lua  
+# from torch.utils.serialization import load_lua
+import torchfile
 from PIL import Image 
 import yaml
 import io
@@ -38,7 +39,8 @@ for _class in sorted(os.listdir(embedding_path)):
 	data_path = os.path.join(embedding_path, _class)
 	txt_path = os.path.join(text_path, _class)
 	for example, txt_file in zip(sorted(glob(data_path + "/*.t7")), sorted(glob(txt_path + "/*.txt"))):
-		example_data = load_lua(example)
+		# example_data = load_lua(example)
+		example_data = torchfile.load(example)
 		img_path = example_data['img']
 		embeddings = example_data['txt'].numpy()
 		example_name = img_path.split('/')[-1][:-4]
